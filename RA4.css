@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    align-items: center;
+}
+.title {
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 7px;
+    transition: all 0.2s ease;
+
+}
+.title:hover {
+    background-color: #3a556f;
+    border-bottom: 2px solid white;
+}
+a {
+    text-decoration: none;
+}
+.sidebar {
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+}
+
+.sidebar h2 {
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 120px;
+}
+.main-content-item {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+header {
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rooms h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.room-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.room-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.room-card h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.room-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    color: #27ae60;
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+/* ... other CSS rules ... */
+
+.modal {
+    display: none; /* Important: Keep display: none; */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Flexbox for centering is added in javascript */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.close ,.close-confirm {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+/* ... rest of your css ... */
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gap {
+    padding-top: 130px;
+}
+.phone-number {
+    font-weight: bold;
+}

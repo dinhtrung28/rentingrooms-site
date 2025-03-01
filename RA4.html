@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Room Rental</title>
+    <link rel="stylesheet" href="RA4.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li class="title"><a href="#luxury">Luxury</a></li>
+        <li class="title"><a href="#wide">Modern</a></li>
+        <li class="title"><a href="#comfortable">Comfortable</a></li>
+        <li class="title"><a href="#cheap">Cheap</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <header>
+        <h1 class="main-content-item">Welcome to Student Room Rental</h1>
+        <p>
+          Helping students find comfortable and affordable rooms in the city.
+        </p>
+      </header>
+      <section class="rooms">
+        <h2 id="luxury" class="gap">Luxury</h2>
+        <div class="room-card">
+          <img src="luxury1.jpg" alt="Room Image" />
+          <h2>Elegant Urban Retreat</h2>
+          <p>
+            A lavishly designed space featuring high-end furnishings, a plush
+            king-size bed, and breathtaking city or ocean views. Enjoy top-tier
+            amenities, a spa-like bathroom, and personalized service for an
+            unforgettable stay.
+          </p>
+          <span class="price">20,000,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+        <div class="room-card">
+          <img src="luxury2.jpg" alt="Room Image" />
+          <h2>Serene Luxury Escape</h2>
+          <p>
+            Immerse yourself in luxury with this beautifully curated room,
+            boasting sophisticated décor, premium linens, and exclusive
+            amenities. Perfect for those who appreciate comfort, style, and
+            first-class hospitality.
+          </p>
+          <span class="price">18,000,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+        <h2 id="wide" class="gap">Modern</h2>
+        <div class="room-card">
+          <img src="modern1.jpg" alt="Room Image" />
+          <h2>Sleek & Stylish Haven</h2>
+          <p>
+            Features clean lines, premium furnishings, and floor-to-ceiling
+            windows. Equipped with cutting-edge amenities, a cozy workspace, and
+            a luxurious en-suite bathroom.
+          </p>
+          <span class="price">12,000,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+        <div class="room-card">
+          <img src="modern2.jpg" alt="Room Image" />
+          <h2>Chic Urban Escape</h2>
+          <p>
+            Contemporary design with minimalist décor, smart technology, and
+            elegant finishes. Includes high-speed Wi-Fi, a smart TV, and ambient
+            lighting.
+          </p>
+          <span class="price">9,000,000 VND/month</span>
+          <button>Contact</button>
+        </div>
+        <h2 id="comfortable" class="gap">Comfortable</h2>
+        <div class="room-card">
+          <img src="comfortable1.jpg" alt="Room Image" />
+          <h2>Cozy & Inviting Retreat</h2>
+          <p>
+            Warm and welcoming with soft lighting, plush bedding, and tasteful
+            décor, creating a home-like atmosphere.
+          </p>
+          <span class="price">5,500,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+        <div class="room-card">
+          <img src="comfortable2.jpg" alt="Room Image" />
+          <h2>Tranquil Comfort Oasis</h2>
+          <p>
+            Spacious bed, cozy seating area, and a peaceful ambiance, perfect
+            for relaxation and rejuvenation.
+          </p>
+          <span class="price">3,500,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+        <h2 id="cheap" class="gap">Cheap</h2>
+        <div class="room-card">
+          <img src="cheap1.jpg" alt="Room Image" />
+          <h2>Affordable & Convenient Stay</h2>
+          <p>
+            clean and practical room with all the basics, including a comfy bed,
+            private or shared bathroom, and easy access to local attractions.
+          </p>
+          <span class="price">$1,200,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+        <div class="room-card">
+          <img src="cheap2.jpg" alt="Room Image" />
+          <h2>Budget-Friendly Comfort</h2>
+          <p>
+            A simple yet cozy space with essential amenities, comfortable
+            bedding, and free Wi-Fi, perfect for travelers on a budget.
+          </p>
+          <span class="price">500,000 VND/month</span>
+          <button>Contact Now</button>
+        </div>
+      </section>
+      <footer>
+        <div class="Contact">
+          <p>Contact us: truongdinhtrung28@gmail.com</p>
+          <p>Phone: 0932066260</p>
+        </div>
+      </footer>
+      <div id="roomModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalTitle" class="">Room Details</h2>
+          <img id="modalImage" src="" alt="Room Image" />
+          <p id="modalDescription">Description of the selected room.</p>
+          <span class="price" id="modalPrice"></span>
+          <button id="confirm-booking" class="phone-number">0932066260</button>
+        </div>
+      </div>
+      <div id="confirmModal" class="modal">
+        <div class="modal-content">
+          <span class="close-confirm">&times;</span>
+          <h2 class="confirm-booking">Contact</h2>
+          <button class="close-confirm-button">Call Now</button>
+        </div>
+      </div>
+    </div>
+    <script src="RA4.js"></script>
+  </body>
+</html>
